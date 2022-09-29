@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.6"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.8"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.7"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/product_type"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/product_type"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@id/v70"
+        app:layout_constraintBottom_toBottomOf="@id/h20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/manager"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/h20"
+        app:layout_constraintLeft_toLeftOf="@id/v70" />
+
+    <NumberPicker
+        android:id="@+id/num_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/v20"
+        app:layout_constraintBottom_toBottomOf="@id/h60"
+        app:layout_constraintTop_toTopOf="@id/h20"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/total"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/v70"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/h60"
+        app:layout_constraintTop_toTopOf="@id/h20" />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/quantity"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/v20"
+        app:layout_constraintBottom_toBottomOf="@id/h80"
+        app:layout_constraintTop_toTopOf="@id/h60" />
+    <Button
+        android:id="@+id/buy_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/buy"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="@id/v70"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/h80"
+        app:layout_constraintTop_toTopOf="@id/h60" />
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#f00"
+        android:dividerHeight="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/h80" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
