@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         product_list = (ListView) findViewById(R.id.product_list);
         products = new String[] {"Pante", "Shoes", "Hats"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.list_row_layout, R.id.product_list, products);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.list_row_layout, R.id.product_name, products);
         product_list.setAdapter(adapter);
     }
 }
