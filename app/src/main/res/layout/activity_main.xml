@@ -78,6 +78,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/total"
+        android:textSize="18sp"
         android:gravity="center"
         app:layout_constraintLeft_toLeftOf="@id/v70"
         app:layout_constraintRight_toRightOf="parent"
@@ -88,6 +89,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/quantity"
+        android:textSize="18sp"
         android:gravity="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@id/v20"
@@ -106,7 +108,7 @@
         app:layout_constraintTop_toTopOf="@id/h60" />
     <ListView
         android:id="@+id/product_list"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="#f00"
         android:dividerHeight="1dp"
