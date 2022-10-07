@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateStock">
+    tools:context=".StockActivity">
 
     <EditText
-        android:id="@+id/input_qty"
+        android:id="@+id/quantity_input"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/productList"
+        android:id="@+id/products"
         android:layout_width="351dp"
         android:layout_height="441dp"
         android:layout_marginTop="72dp"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/input_qty" />
 
     <Button
-        android:id="@+id/updateCancel"
+        android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/input_qty" />
 
     <Button
-        android:id="@+id/updateQty"
+        android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
